@@ -48,6 +48,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+	$(DEVICE_PATH)/keylayout/sdm660-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/sdm660-snd-card_Button_Jack.kl
+
 # FM
 BOARD_HAVE_QCOM_FM := true
 
