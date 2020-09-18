@@ -23,4 +23,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.has_wide_color_display=true \
     ro.surface_flinger.use_color_management=true \
+    ro.sf.blurs_are_expensive=1 \
     ro.surface_flinger.supports_background_blur=1
