@@ -24,6 +24,9 @@
 # Inherit from sdm660-common
 $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
+# GoogleCamera
+$(call inherit-product, packages/apps/GoogleCamera/gcam.mk)
+
 DEVICE_PATH := device/xiaomi/lavender
 
 # Inherit properties.mk
