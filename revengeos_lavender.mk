@@ -38,7 +38,9 @@ REVENGEOS_BUILDTYPE := OFFICIAL
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lavender" \
     PRODUCT_NAME="lavender" \
-    PRIVATE_BUILD_DESC="lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys" 
+    PRIVATE_BUILD_DESC="lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys"
+
+BUILD_FINGERPRINT := "google/coral/coral:11/RQ1A.201205.008/6943376:user/release-keys" 
 
 # Device identifier
 PRODUCT_NAME := revengeos_lavender
@@ -47,7 +49,8 @@ PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 TARGET_VENDOR_PRODUCT_NAME := lavender
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
