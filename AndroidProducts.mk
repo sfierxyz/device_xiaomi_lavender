@@ -23,9 +23,9 @@
 
 # Inherit Redmi Note 7 Carbon device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_lavender.mk
+    $(LOCAL_DIR)/aosip_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_lavender-eng \
-    aicp_lavender-userdebug \
-    aicp_lavender-user
+    aosip_lavender-eng \
+    aosip_lavender-userdebug \
+    aosip_lavender-user
