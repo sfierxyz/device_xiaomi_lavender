@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_lavender.mk
+    $(LOCAL_DIR)/fluid_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosip_lavender-user \
-    aosip_lavender-userdebug \
-    aosip_lavender-eng
+    fluid_lavender-user \
+    fluid_lavender-userdebug \
+    fluid_lavender-eng
