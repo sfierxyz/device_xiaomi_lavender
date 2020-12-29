@@ -94,7 +94,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 
 # AOSP DEVICE
-PRODUCT_NAME := revengeos_lavender
+PRODUCT_NAME := fluid_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_MODEL := Redmi Note 7 (AOSP)
 PRODUCT_BRAND := Xiaomi
