@@ -67,5 +67,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-10-05
 
+# EXFAT
+TARGET_EXFAT_DRIVER := exfat
+
 # Inherit the proprietary files
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk
