@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -36,7 +36,7 @@ endif
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := fluid_lavender
+PRODUCT_NAME := aosp_lavender
 PRODUCT_MODEL := Redmi Note 7
 FLUID_BUILD_TYPE := OFFICIAL
 
@@ -52,5 +52,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210305.006/7119741:user/release-keys
 
 PRODUCT_PRODUCT_PROPERTIES += \
-  ro.fluid.maintainer=Sfier Reichenbach \
-  ro.fluid.cpu=SDM660
+  ro.aosp.maintainer=Sfier Reichenbach \
+  ro.aosp.cpu=SDM660
