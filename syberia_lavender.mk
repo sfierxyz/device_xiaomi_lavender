@@ -19,8 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Syberia stuff
+$(call inherit-product, vendor/syberia/common.mk)
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -36,7 +36,7 @@ endif
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosp_lavender
+PRODUCT_NAME := syberia_lavender
 PRODUCT_MODEL := Redmi Note 7
 FLUID_BUILD_TYPE := OFFICIAL
 
@@ -49,8 +49,10 @@ TARGET_VENDOR_PRODUCT_NAME := lavender
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V10.3.6.0.PFGMIXM release-keys"
 
+TARGET_BOOT_ANIMATION_RES := 1080
+
 BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210305.006/7119741:user/release-keys
 
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.aosp.maintainer=Sfier Reichenbach \
-  ro.aosp.cpu=SDM660
+#PRODUCT_PRODUCT_PROPERTIES += \
+  ro.syberia.maintainer=Sfier Reichenbach \
+  ro.syberia.cpu=SDM660
