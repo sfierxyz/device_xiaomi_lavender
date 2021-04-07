@@ -1,0 +1,7 @@
+# Device mask
+ro.build.fingerprint=google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys
+ro.product.brand=google
+ro.product.device=redfin
+ro.product.manufacturer=Google
+ro.product.model=Pixel 4a (5G)
+ro.product.name=redfin
