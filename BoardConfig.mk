@@ -51,6 +51,9 @@ TARGET_KERNEL_CONFIG := lavender_defconfig
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
 
+# Product properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3640619008
 BOARD_VENDORIMAGE_PARTITION_SIZE := 2080305152
