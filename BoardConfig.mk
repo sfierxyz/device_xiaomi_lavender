@@ -47,7 +47,6 @@ TARGET_SCREEN_DENSITY := 420
 
 # Kernel
 TARGET_KERNEL_CONFIG := lavender_defconfig
-BOARD_KERNEL_SEPARATED_DTBO := true
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
@@ -55,7 +54,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3640619008
 BOARD_VENDORIMAGE_PARTITION_SIZE := 2080305152
-BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 # Recovery
@@ -66,6 +64,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-10-05
+
+# EXFAT
+TARGET_EXFAT_DRIVER := sdfat
 
 # Inherit the proprietary files
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk

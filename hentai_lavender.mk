@@ -19,30 +19,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+# Inherit some common hOS! stuff
+$(call inherit-product, vendor/hentai/config/common_telephony.mk)
+$(call inherit-product, vendor/hentai/build/product/hentai_product.mk)
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 
-ifeq ($(WITH_GAPPS),true)
-TARGET_INCLUDE_GAPPS := true
+# Inherit AOSP product configuration
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_GAPPS := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-endif
+IS_PHONE := true
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_INCLUDE_STOCK_ARCORE := true
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := fluid_lavender
+PRODUCT_NAME := hentai_lavender
 PRODUCT_MODEL := Redmi Note 7
-FLUID_BUILD_TYPE := OFFICIAL
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-IS_PHONE := true
-FLUID_BUILD_TYPE := OFFICIAL
 
 TARGET_VENDOR_PRODUCT_NAME := lavender
 
@@ -50,7 +48,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V10.3.6.0.PFGMIXM release-keys"
 
 BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys
-
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.fluid.maintainer=Sfier Reichenbach \
-  ro.fluid.cpu=SDM660
