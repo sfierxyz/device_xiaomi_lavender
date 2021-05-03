@@ -11,6 +11,10 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
+# libstdc++ - from Android Bionic
+vendor/lib/libstdc++.so
+vendor/lib64/libstdc++.so
+
 # Camera - from lavender P 11.0.4
 vendor/lib/hw/camera.sdm660.so|50e671432994ec9085810e5fa9c9c6619262bc19
 vendor/lib/libc++_shared.so|54a61595d6fee176af9aa65ff044746ed1446233
