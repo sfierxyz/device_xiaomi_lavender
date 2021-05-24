@@ -48,6 +48,9 @@ TARGET_SCREEN_DENSITY := 420
 # Kernel
 TARGET_KERNEL_CONFIG := lavender_defconfig
 
+DEVICE_USE_PREBUILT_KERNEL := true
+include device/xiaomi/lavender-kernel/BoardConfig.mk
+
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
 
